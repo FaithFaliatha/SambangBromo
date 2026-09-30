@@ -1,0 +1,228 @@
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-dim":"#121416","secondary-fixed-dim":"#e7c433","primary":"#ffc495","tertiary-fixed-dim":"#a9d293","on-surface":"#e2e2e5","surface":"#121416","error-container":"#93000a","surface-bright":"#37393b","surface-variant":"#333537","on-tertiary-fixed":"#062100","surface-container":"#1e2022","on-primary-fixed":"#2e1500","on-primary":"#4d2700","inverse-on-surface":"#2f3133","error":"#ffb4ab","background":"#121416","on-tertiary-container":"#2d4f1e","on-secondary-container":"#453800","primary-container":"#ff9d42","on-surface-variant":"#dac2b1","tertiary-fixed":"#c5efad","surface-tint":"#ffb77c","primary-fixed":"#ffdcc2","on-error":"#690005","outline-variant":"#544337","surface-container-highest":"#333537","on-secondary":"#3b2f00","on-primary-fixed-variant":"#6d3900","on-tertiary-fixed-variant":"#2d4f1e","on-error-container":"#ffdad6","tertiary-container":"#98c082","on-tertiary":"#173809","surface-container-lowest":"#0c0e10","on-background":"#e2e2e5","secondary":"#e7c433","secondary-container":"#c1a100","inverse-surface":"#e2e2e5","tertiary":"#b3dc9c","surface-container-high":"#282a2c","inverse-primary":"#904d00","secondary-fixed":"#ffe174","primary-fixed-dim":"#ffb77c","on-secondary-fixed-variant":"#554500","outline":"#a28d7d","on-secondary-fixed":"#221b00","on-primary-container":"#6c3900","surface-container-low":"#1a1c1e"},"borderRadius":{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},"spacing":{"margin-desktop":"64px","container-max":"1280px","unit":"8px","margin-mobile":"16px","gutter":"24px"},"fontFamily":{"display-lg":["Sora"],"body-md":["Inter"],"headline-sm":["Sora"],"label-caps":["Geist"],"headline-md":["Sora"],"display-lg-mobile":["Sora"],"body-lg":["Inter"]},"fontSize":{"display-lg":["64px",{"lineHeight":"72px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-md":["16px",{"lineHeight":"24px","fontWeight":"400"}],"headline-sm":["24px",{"lineHeight":"32px","fontWeight":"600"}],"label-caps":["12px",{"lineHeight":"16px","letterSpacing":"0.1em","fontWeight":"600"}],"headline-md":["32px",{"lineHeight":"40px","fontWeight":"600"}],"display-lg-mobile":["40px",{"lineHeight":"48px","letterSpacing":"-0.02em","fontWeight":"700"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}]}}}}</script><link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&amp;family=Inter:wght@400&amp;family=Geist:wght@600&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/></head><body class="bg-background font-body-md text-on-background"><header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.15)]"><div class="h-20 w-full px-margin-mobile md:px-margin-desktop flex items-center justify-between"><div class="flex items-center gap-4"><img alt="Sambangbromo Logo" class="h-10 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AP1WRLvYTukF6rjJJfwS2wYm-ODnVp8epsPvISOKHzz8-O93bL4F_cPKhWmDaaGyb4aOIen2ZCr_P1yaIkhszge99pB7L7P5fSknAxPoSQ3wfPbeu4M-2zBREr4uNL8wrUe_731PrN68q5Zkwgy7dPmW14yrRUwerLz-OjvEOlIXhbjJlIp1ysb_GdFSEsI6ewx6pQkjSF2U4iwjKoy3SGPG4q102-KBJcjazXf4QbUZ6MiHgkmABMujS7IdqneI"/><span class="font-headline-sm text-headline-sm text-on-surface uppercase tracking-tight">Sambangbromo</span></div><nav class="hidden md:flex items-center gap-8" data-active-classes="text-primary font-semibold"><a aria-current="page" class="transition-all text-primary font-semibold" data-path="expeditions" href="#">Expeditions</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" data-path="itineraries" href="#">Itineraries</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" data-path="concierge" href="#">Concierge</a><a class="font-label-caps text-label-caps text-on-surface-variant hover:text-on-surface transition-all" data-path="safety" href="#">Safety</a></nav><div class="flex items-center gap-6"><span class="material-symbols-outlined text-on-surface-variant cursor-pointer">search</span><div class="w-10 h-10 rounded-full bg-primary flex items-center justify-center cursor-pointer shadow-lg"><span class="material-symbols-outlined text-on-primary text-[20px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background min-h-screen"><div class="flex flex-col w-full">
+<!-- Top Bar / Filter Nav (Simulated for tablet view, normally handled by shell, but added here for the specific "Navigation bar with easy access to filters" request) -->
+<div class="sticky top-20 z-40 w-full bg-surface-container-high/90 backdrop-blur-md border-b border-outline-variant/20 py-4 px-margin-mobile md:px-margin-desktop flex items-center justify-between shadow-sm">
+<div class="flex items-center gap-4 overflow-x-auto no-scrollbar mask-gradient-r">
+<button class="flex-none px-4 py-2 rounded-full bg-primary text-on-primary font-label-caps tracking-wider text-[11px] shadow-[0_0_15px_rgba(255,196,149,0.3)] transition-all duration-300">ALL EXPEDITIONS</button>
+<button class="flex-none px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:text-on-surface hover:border-outline font-label-caps tracking-wider text-[11px] transition-all duration-300">SUNRISE SUMMITS</button>
+<button class="flex-none px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:text-on-surface hover:border-outline font-label-caps tracking-wider text-[11px] transition-all duration-300">VOLCANO CRATERS</button>
+<button class="flex-none px-4 py-2 rounded-full border border-outline-variant text-on-surface-variant hover:text-on-surface hover:border-outline font-label-caps tracking-wider text-[11px] transition-all duration-300">MULTI-DAY</button>
+</div>
+<button class="ml-4 flex items-center gap-2 text-primary hover:text-primary-fixed transition-colors">
+<span class="font-label-caps tracking-wider text-[11px]">FILTER</span>
+<span class="material-symbols-outlined text-[18px]">tune</span>
+</button>
+</div>
+<!-- Page Header -->
+<section class="w-full px-margin-mobile md:px-margin-desktop py-12 md:py-20 relative overflow-hidden">
+<div class="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-[100px] -translate-y-1/2 translate-x-1/3 pointer-events-none"></div>
+<div class="relative z-10 max-w-container-max mx-auto flex flex-col gap-4">
+<div class="flex items-center gap-3">
+<span class="w-8 h-[2px] bg-primary"></span>
+<span class="font-label-caps text-primary tracking-[0.2em]">CURATED ITINERARIES</span>
+</div>
+<h1 class="font-display-lg-mobile md:font-display-lg text-on-surface">Expedition Packages</h1>
+<p class="font-body-lg text-on-surface-variant max-w-2xl mt-2 opacity-80">Discover East Java's raw volcanic beauty through our expertly crafted journeys. From the iconic Bromo sunrise to the blue fires of Ijen.</p>
+</div>
+</section>
+<!-- Tour Packages Grid (Tablet 2-cols focus) -->
+<section class="w-full px-margin-mobile md:px-margin-desktop pb-24">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-gutter md:gap-8">
+<!-- Package Card 1: Bromo Midnight -->
+<article class="group relative flex flex-col bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+<div class="relative h-64 md:h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A hyper-realistic, high-contrast photograph of Mount Bromo at sunrise. The sky is a dramatic gradient of deep indigo fading into vibrant fiery orange and pink hues near the horizon. A sea of thick, rolling white mist blankets the caldera floor, from which the rugged, dark volcanic cone of Bromo emerges. A thin plume of white smoke gently drifts from the crater. The lighting is cinematic, highlighting the jagged textures of the volcanic rock against the soft, ethereal mist. Wide landscape shot, majestic mood." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCv0GEUv_vMNY7yaMwfqGSbpCrv96g3ujshQTbQjs4l0c81IrOVc6tq-AnlMDzabA7f58xsP4zdG685unaw_h3HMh2u1OwTqdQ1v2kT9H4mCENK3i1cDMJK0f4dr8RWsT0ef7HAYZ4njQ9gZiETuBGpagDZn_YWiWkbHBBkNde5QODp_x6bZv6TtY0xrpj87QTEavOmiJoJemCDZ6-9Az7lwbctxxvEy2Scoit_qQcZyV3grk53gmhenw')"></div>
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="px-3 py-1 bg-secondary text-on-secondary font-label-caps text-[10px] rounded-full shadow-lg">BEST SELLER</span>
+<span class="px-3 py-1 bg-surface-dim/80 backdrop-blur-md text-on-surface font-label-caps text-[10px] rounded-full border border-outline-variant/50">1 DAY</span>
+</div>
+<button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface-dim/50 backdrop-blur-md flex items-center justify-center border border-outline-variant/50 hover:bg-surface-dim/80 hover:text-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative z-20 flex flex-col flex-grow p-6 md:p-8 -mt-12 bg-gradient-to-b from-transparent to-surface-container">
+<div class="flex items-end justify-between mb-2">
+<h2 class="font-headline-md text-on-surface leading-tight">Bromo Midnight<br/>Sunrise</h2>
+<div class="text-right">
+<span class="block font-label-caps text-on-surface-variant text-[10px] opacity-70 mb-1">FROM</span>
+<span class="font-headline-sm text-primary">Rp 1.2M</span>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant opacity-80 mt-4 mb-6 line-clamp-2">Experience the ethereal beauty of a Bromo sunrise. Our signature midnight departure ensures you claim the best vantage point at Penanjakan before the crowds arrive.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[16px]">schedule</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">DURATION</span>
+<span class="font-label-caps text-on-surface">12 HOURS</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[16px]">terrain</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">DIFFICULTY</span>
+<span class="font-label-caps text-on-surface">MODERATE</span>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-surface-bright hover:bg-primary hover:text-on-primary text-on-surface font-label-caps tracking-widest rounded-lg transition-all duration-300 border border-outline-variant/50 hover:border-transparent flex items-center justify-center gap-2 group/btn">
+              VIEW ITINERARY
+              <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Package Card 2: Bromo + Ijen -->
+<article class="group relative flex flex-col bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+<div class="relative h-64 md:h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A mesmerizing night shot of the Ijen crater. The focal point is the intense, otherworldly electric blue flames burning from the sulfur deposits on the crater floor. Plumes of thick, yellowish-white sulfur smoke rise into the dark, starry night sky. The rocky walls of the crater are dimly lit by the eerie blue glow. A faint silhouette of a miner or explorer can be seen in the foreground for scale. Highly detailed, National Geographic style, conveying a sense of extreme adventure." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDhlClylen_H0dp39kV4-8wTDQjJEJ3TZ9m_mV_zEJfpHrQnK8ICqnN_evjfjRbYyzEtdAI2CjcpzVxRpgF05cm-INbxHcbUHULWWDqF_XgDI4aK_ykKxfnKG6H1TvWrwcZ5SskGdQNQAZG1_sEAm2OpqRzE6TatBfu8CJykHWAKdDwp95NAs3pBZZgIUiyrlzW3kFTvx7wW66DDpilIngyGfeXXc_hiFwATmhKoljthqOdOAgs5PGiqw')"></div>
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="px-3 py-1 bg-surface-dim/80 backdrop-blur-md text-on-surface font-label-caps text-[10px] rounded-full border border-outline-variant/50">3 DAYS / 2 NIGHTS</span>
+</div>
+<button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface-dim/50 backdrop-blur-md flex items-center justify-center border border-outline-variant/50 hover:bg-surface-dim/80 hover:text-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[20px]">favorite</span>
+</button>
+</div>
+<div class="relative z-20 flex flex-col flex-grow p-6 md:p-8 -mt-12 bg-gradient-to-b from-transparent to-surface-container">
+<div class="flex items-end justify-between mb-2">
+<h2 class="font-headline-md text-on-surface leading-tight">Bromo &amp; Ijen<br/>Blue Fire</h2>
+<div class="text-right">
+<span class="block font-label-caps text-on-surface-variant text-[10px] opacity-70 mb-1">FROM</span>
+<span class="font-headline-sm text-primary">Rp 3.5M</span>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant opacity-80 mt-4 mb-6 line-clamp-2">The ultimate East Java volcanic dual-expedition. Witness the majestic Bromo sunrise followed by a challenging nocturnal trek to see Ijen's elusive blue flames.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[16px]">map</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">LOCATIONS</span>
+<span class="font-label-caps text-on-surface">2 CRATERS</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-error-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-error-container text-[16px]">vital_signs</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">DIFFICULTY</span>
+<span class="font-label-caps text-on-surface">CHALLENGING</span>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-surface-bright hover:bg-primary hover:text-on-primary text-on-surface font-label-caps tracking-widest rounded-lg transition-all duration-300 border border-outline-variant/50 hover:border-transparent flex items-center justify-center gap-2 group/btn">
+              VIEW ITINERARY
+              <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Package Card 3: Tumpak Sewu -->
+<article class="group relative flex flex-col bg-surface-container rounded-2xl overflow-hidden border border-outline-variant/30 hover:border-primary/50 transition-all duration-500 hover:shadow-[0_8px_32px_rgba(0,0,0,0.4)]">
+<div class="relative h-64 md:h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/20 to-transparent z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105" data-alt="A breathtaking view of Tumpak Sewu waterfall from an elevated vantage point. A massive, semi-circular curtain of water plunges down sheer, lush green cliff faces into a deep, misty gorge below. The surrounding jungle is dense and vibrant. Sunlight filters through the mist, creating rainbows. In the distant background, the imposing silhouette of Mount Semeru is visible against a clear blue sky. High contrast, cinematic adventure photography." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDmMlmWv_NGSFAUF1qXh11JCHSiXgmKWnmZO5jQnscdvPU-AES9u7ve29D-2Vej8BwYhJs2PlmGef-qZ_QOjKJfCH3r8JX40CnZai-43SEiXZTYs5DVwtVq4rDwV1HHioV_sLBEucZpRQ9p2BTOM_J7sZOIEKz2pvGBnYBWqeyyKoiZTYHP7brzxGr-GhDiesCZsgENZOK8xSuGZKcKSIR0je2zes5vC_AO6KtK_GFifFE5J6gqiGzEnw')"></div>
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="px-3 py-1 bg-surface-dim/80 backdrop-blur-md text-on-surface font-label-caps text-[10px] rounded-full border border-outline-variant/50">1 DAY</span>
+</div>
+<button class="absolute top-4 right-4 z-20 w-10 h-10 rounded-full bg-surface-dim/50 backdrop-blur-md flex items-center justify-center border border-outline-variant/50 hover:bg-surface-dim/80 hover:text-primary transition-colors text-on-surface">
+<span class="material-symbols-outlined text-[20px]">favorite_border</span>
+</button>
+</div>
+<div class="relative z-20 flex flex-col flex-grow p-6 md:p-8 -mt-12 bg-gradient-to-b from-transparent to-surface-container">
+<div class="flex items-end justify-between mb-2">
+<h2 class="font-headline-md text-on-surface leading-tight">Tumpak Sewu<br/>Waterfall Trek</h2>
+<div class="text-right">
+<span class="block font-label-caps text-on-surface-variant text-[10px] opacity-70 mb-1">FROM</span>
+<span class="font-headline-sm text-primary">Rp 900K</span>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant opacity-80 mt-4 mb-6 line-clamp-2">Descend into the 'Thousand Waterfalls' gorge. A thrilling, wet, and rugged trek leading to the base of Indonesia's most magnificent cascading waterfall.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-primary text-[16px]">water_drop</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">ENVIRONMENT</span>
+<span class="font-label-caps text-on-surface">WET / JUNGLE</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary text-[16px]">terrain</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">DIFFICULTY</span>
+<span class="font-label-caps text-on-surface">MODERATE</span>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-surface-bright hover:bg-primary hover:text-on-primary text-on-surface font-label-caps tracking-widest rounded-lg transition-all duration-300 border border-outline-variant/50 hover:border-transparent flex items-center justify-center gap-2 group/btn">
+              VIEW ITINERARY
+              <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+</div>
+</article>
+<!-- Package Card 4: VIP Private Access -->
+<article class="group relative flex flex-col bg-surface-container rounded-2xl overflow-hidden border border-secondary-fixed-dim/30 hover:border-secondary-fixed-dim transition-all duration-500 hover:shadow-[0_8px_32px_rgba(231,196,51,0.15)]">
+<div class="absolute inset-0 bg-gradient-to-br from-secondary/5 to-transparent pointer-events-none"></div>
+<div class="relative h-64 md:h-80 w-full overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container via-surface-container/40 to-surface-container/10 z-10"></div>
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105 opacity-80 mix-blend-luminosity" data-alt="An interior shot of a luxury 4x4 off-road vehicle (like a modified Land Cruiser) traversing the Bromo Sea of Sand. The perspective is from the comfortable leather backseat looking out the window towards the volcanic landscape. A plush blanket and a thermos of hot coffee sit on the seat. The atmosphere is exclusive, rugged yet refined. Soft warm morning light illuminates the dusty terrain outside." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD1Sq-rNPX0W8xqTeVYK3nfNyVIRHFAnkLpfsZjY4GOmqTpbj_SvMe80WM0DigLtPsoPBAWges4tAp7_Vk7mYezbDjvpxMEPoE0Oh7WJbtV8ucwsP4m1OWwKfJ4xRxM6nYvDiSsA9Thl7a4qrhqaHCl7Csc_IMQVoWNrqkMZOwK7Bu_6xdj0UUa4gPgyM6YnZExI3micZFsduV3WxJ8nROXz80829MHjrVtoKxzpP_Uznaa4EjMc9RMwQ')"></div>
+<div class="absolute top-4 left-4 z-20 flex gap-2">
+<span class="px-3 py-1 bg-secondary text-on-secondary font-label-caps text-[10px] rounded-full shadow-[0_0_15px_rgba(231,196,51,0.4)]">CONCIERGE EXCLUSIVE</span>
+</div>
+</div>
+<div class="relative z-20 flex flex-col flex-grow p-6 md:p-8 -mt-12 bg-gradient-to-b from-transparent to-surface-container">
+<div class="flex items-end justify-between mb-2">
+<h2 class="font-headline-md text-secondary leading-tight">Private Helipad &amp;<br/>Luxury 4x4</h2>
+<div class="text-right">
+<span class="block font-label-caps text-on-surface-variant text-[10px] opacity-70 mb-1">CUSTOM PRICING</span>
+<span class="font-headline-sm text-secondary">Inquire</span>
+</div>
+</div>
+<p class="font-body-md text-on-surface-variant opacity-80 mt-4 mb-6 line-clamp-2">Bypass the crowds. Private helicopter transfer from Surabaya directly to our exclusive basecamp, followed by a bespoke guided tour in modified luxury Land Cruisers.</p>
+<div class="grid grid-cols-2 gap-4 mb-8">
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-on-secondary-container text-[16px]">workspace_premium</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">SERVICE LEVEL</span>
+<span class="font-label-caps text-secondary-fixed">ULTRA VIP</span>
+</div>
+</div>
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center">
+<span class="material-symbols-outlined text-secondary-fixed text-[16px]">group</span>
+</div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] text-on-surface-variant opacity-60">GROUP SIZE</span>
+<span class="font-label-caps text-secondary-fixed">1-4 GUESTS</span>
+</div>
+</div>
+</div>
+<div class="mt-auto">
+<button class="w-full py-4 bg-secondary/10 hover:bg-secondary text-secondary hover:text-on-secondary font-label-caps tracking-widest rounded-lg transition-all duration-300 border border-secondary/30 hover:border-transparent flex items-center justify-center gap-2 group/btn">
+              CONTACT CONCIERGE
+              <span class="material-symbols-outlined text-[16px] group-hover/btn:translate-x-1 transition-transform">mail</span>
+</button>
+</div>
+</div>
+</article>
+</div>
+</section>
+</div></main><footer class="w-full bg-surface-container-lowest py-12 border-t border-outline-variant/10"><div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop"><div class="grid grid-cols-1 md:grid-cols-3 gap-gutter"><div class="flex flex-col gap-4"><img class="h-8 w-auto self-start" src="https://lh3.googleusercontent.com/aida/AP1WRLvYTukF6rjJJfwS2wYm-ODnVp8epsPvISOKHzz8-O93bL4F_cPKhWmDaaGyb4aOIen2ZCr_P1yaIkhszge99pB7L7P5fSknAxPoSQ3wfPbeu4M-2zBREr4uNL8wrUe_731PrN68q5Zkwgy7dPmW14yrRUwerLz-OjvEOlIXhbjJlIp1ysb_GdFSEsI6ewx6pQkjSF2U4iwjKoy3SGPG4q102-KBJcjazXf4QbUZ6MiHgkmABMujS7IdqneI"/><p class="font-body-md text-on-surface-variant opacity-70">Elevating the Bromo expedition experience through expert guidance and luxury service.</p></div><div class="flex flex-col gap-2"><h4 class="font-label-caps text-label-caps text-secondary mb-2">Adventure</h4><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Mount Bromo</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Ijen Crater</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Tumpak Sewu</a></div><div class="flex flex-col gap-2"><h4 class="font-label-caps text-label-caps text-secondary mb-2">Support</h4><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Emergency Protocols</a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Contact Concierge</a></div></div><div class="mt-12 pt-8 border-t border-outline-variant/10 text-center font-label-caps text-on-surface-variant opacity-50">© 2024 SAMBANGBROMO EXPEDITIONS. ALL RIGHTS RESERVED.</div></div></footer></body></html>
